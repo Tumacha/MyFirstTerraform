@@ -7,6 +7,7 @@ resource "aws_instance" "myec2vm" {
   associate_public_ip_address = true
   user_data              = file("${path.module}/app1-install.sh")
   tags = {
-    "Name" = "EC2 Github"
+    "Name" = sanderin_tag
+    
   }
 }
